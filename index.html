@@ -16,14 +16,24 @@
       }
 
       body {
-        background-color: black; /* Set body background color */
-        color: white; /* Set text color */
+        background-color: black;
+        color: white;
       }
 
       .container {
         display: flex;
-        justify-content: space-between; /* Distribute space between columns */
+        justify-content: space-between;
         padding: 30px;
+      }
+      .container p {
+        align-items: center
+        font-size: 18px
+        }
+      .container a img {
+        height: 200px;
+        width: 200px;
+        border: None;
+        margin: 0 10px;
       }
 
       .aboutcolumn {
@@ -31,16 +41,17 @@
         padding: 30px;
       }
 
-      .linkcolumn {
+      .linksrow {
         flex: 0.5;
         padding: 30px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
       }
 
-      .linkcolumn p {
+      .linksrow p {
         color: white;
+        aling-items: center;
       }
 
       .imglist {
@@ -72,11 +83,16 @@
     ></script>
     <div class="container text-center">
       <div class="row">
-        <div class="linkcolumn">
+        <div class="linksrow">
           <div class="container">
-            <p>GITHUB</p>
+            <p>Contact Me At</p>
             <a href="https://github.com/kenglordpanda">
               <img src="icons/github.png" alt="Github" />
+            </a>
+          </div>
+          <div class="container">
+            <a href="www.linkedin.com/in/khang-tran-950b91262">
+              <img src="icons/linkedin.png" alt="LinkedIn" />
             </a>
           </div>
         </div>
@@ -86,8 +102,7 @@
           <p>
             Hi, my name is Khang and I am currently a Senior in Computer Science
             at Wichita State University. I currently work at NIAR's Digital Twin
-            Lab as a Student Assistant working on modeling parts in CAD
-            Software.
+            Lab as a Student Assistant/Intern.
           </p>
         </div>
 
